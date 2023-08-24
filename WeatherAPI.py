@@ -5,13 +5,14 @@ location=input("Enter current location:")
 params = {
   'access_key': 'dc2d2f4409088f1463e06d0cbfb96953',
   'query': location,
+  'forecast_days' : 7
 
 }
 
 api_result = requests.get('http://api.weatherstack.com/current', params)
 
 api_response = api_result.json()
-# print(api_response)
+print(api_response)
 if 'success' in api_response and api_response['success'] == False:
     print("\n	API request has failed.")
 else:
