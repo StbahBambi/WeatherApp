@@ -1,1 +1,2 @@
 # WeatherApp
+Simple Python WeatherApp
